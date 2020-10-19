@@ -74,7 +74,68 @@ margin-top: 0px;
 	font-family: 'Raleway';
 }
 
+.pho-container{
+    margin: 4% auto;
+    width: 210px;
+    height: 140px;
+    position: relative;
+    perspective: 1000px;
+}
 
+#pho-rot{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    animation: rotation 20s  infinite linear;
+}
+#pho-rot:hover{
+    animation-play-state: paused;
+}
+
+/* created by ayesha*/
+#pho-rot figure{
+    display: block;
+    position: absolute;
+    width: 186px;
+    height: 116px;
+    left: 10px;
+    top: 10px;
+    background: white;
+    overflow: hidden;
+    border: solid 5px black;
+}
+#pho-rot figure:nth-child(1){transform: rotateY(0deg) translateZ(288px);}
+#pho-rot figure:nth-child(2) { transform: rotateY(40deg) translateZ(288px);}
+#pho-rot figure:nth-child(3) { transform: rotateY(80deg) translateZ(288px);}
+#pho-rot figure:nth-child(4) { transform: rotateY(120deg) translateZ(288px);}
+#pho-rot figure:nth-child(5) { transform: rotateY(160deg) translateZ(288px);}
+#pho-rot figure:nth-child(6) { transform: rotateY(200deg) translateZ(288px);}
+#pho-rot figure:nth-child(7) { transform: rotateY(240deg) translateZ(288px);}
+#pho-rot figure:nth-child(8) { transform: rotateY(280deg) translateZ(288px);}
+#pho-rot figure:nth-child(9) { transform: rotateY(320deg) translateZ(288px);}
+
+.rot{
+    -webkit-filter: grayscale(1);
+    cursor: pointer;
+    height:100%;
+    width:100%;
+    transition: all .5s ease;
+}
+.rot:hover{
+    -webkit-filter: grayscale(0);
+  transform: scale(1.2,1.2);
+}
+
+@keyframes rotation{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+        
 /*Education starts here*/
 *
 {
