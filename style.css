@@ -1,0 +1,249 @@
+html
+{
+	scroll-behavior: smooth;
+}
+body
+{
+	font-family: 'Raleway';font-size: 22px;
+	color:#272829;
+}
+html,body
+{
+	width:100%;
+	height: auto;
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+	font-family: 'Raleway';
+
+}
+.heading
+{
+	font-size: 3rem;
+	text-align: center;
+	font-family: 'Raleway';
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-weight: 600;
+}
+section
+{
+	font-family: 'Raleway';
+
+}
+
+/*Navbar styling*/
+.fixednav
+{
+	position: fixed;
+	overflow: hidden;
+	width: 100%;
+	z-index: 1;
+}
+
+/*Hero Section styling*/
+#hero 
+{
+	
+	height: 100%;
+	text-align: center;
+
+}
+.hero-img
+{
+background-image:url("https://www.capcitycreative.ca/wp-content/uploads/2017/01/slider-background.jpeg");
+height:100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+z-index: -2;
+margin-top: 0px;
+}
+.hero-txt
+{
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+        width:100%;
+	transform:translate(-50%,-50%);
+	color:white; 
+		
+	font-family: 'Raleway';
+}
+
+
+/*Education starts here*/
+*
+{
+	box-sizing: border-box;
+}
+.row
+{
+margin: 0 -5px;
+}
+.col
+{
+width: 33%;
+float: left;
+overflow: hidden;
+padding: 20px;
+}
+.row:after
+{
+	content: "";
+	display: table;
+	clear: both;
+}
+.card
+{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	background-color: #f1f1f1;
+	overflow: hidden;
+    height:200px;
+	text-align: center;
+
+}
+
+/*Skills Section styling*/
+.skillbar
+{
+	text-align: center;
+	font-size: 22px;
+	width: 100%;
+
+}
+
+/*Internships Section styling*/
+.col3 {
+  float: left;
+  width: 50%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  
+
+}
+
+.card3 {
+  padding: 3px;
+  margin-bottom: 5px;
+  text-align: center;
+  overflow: hidden;
+}
+.certificate
+{
+	width: 25%;
+}
+#ngoc
+{
+	width: 16%;
+}
+/*Projects Section styling*/
+.projects
+{
+text-align: center;	
+}
+
+
+/*Training Section styling*/
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.col2 {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  
+
+}
+
+@media screen and (max-width: 650px) {
+  .col2 {
+    width: 100%;
+    display: block;
+    padding: 10px 10px;
+    ;
+  }
+}
+
+.card2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  overflow: hidden;
+}
+
+/*Extracurricular Section styling*/
+#extracurricular
+{
+	text-align: center;
+}
+
+
+
+
+/*Contact Section styling*/
+.contact h4
+{
+	text-align: center;
+}
+
+
+
+
+/*Footer Section styling*/
+.footer
+{
+	color: white;
+	background-color: black;
+	text-align: center;
+	font-family: 'Raleway';
+}
+.footer p
+{
+	margin-top: 10px;
+	padding: 5px;
+}
+
+/*Mobile view Section styling*/
+@media screen and (max-width: 600px) {
+
+  .hero-txt 
+  {
+    display: block;
+    
+    width:100%;
+  }
+ .fixednav
+ {
+ 	position: sticky;
+ }
+}
+@media screen and (max-width: 600px) {
+	.col
+	{
+		width: 100%;
+
+		
+	}
+	.skillbar
+	{
+		font-size: 18px;
+	}
+	.certificate
+	{
+		width: 40%;
+		
+	}
+	#ngoc
+	{
+		width: 40%;
+	}
+	.col3
+	{
+		width: 100%;
+	}
+}
