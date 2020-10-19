@@ -39,6 +39,7 @@ section
 	overflow: hidden;
 	width: 100%;
 	z-index: 1;
+	margin-bottom:25px;
 }
 
 /*Hero Section styling*/
@@ -85,7 +86,7 @@ margin: 0 -5px;
 }
 .col
 {
-width: 33%;
+width: 99%;
 float: left;
 overflow: hidden;
 padding: 20px;
